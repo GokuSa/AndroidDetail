@@ -1,0 +1,48 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+
+        <!-- <item name="android:windowSharedElementEnterTransition" tools:ignore="NewApi">
+             @transition/grid_detail_transition
+         </item>
+         <item name="android:windowSharedElementExitTransition" tools:ignore="NewApi">
+             @transition/grid_detail_transition
+         </item>-->
+    </style>
+
+    <style name="mainTheme" parent="AppTheme">
+        <item name="android:windowActivityTransitions" tools:ignore="NewApi">true</item>
+       <!-- <item name="android:windowExitTransition" tools:ignore="NewApi">
+            @transition/main_exit_transition
+        </item>
+        <item name="android:windowReenterTransition" tools:ignore="NewApi">
+            @transition/main_exit_transition
+        </item>-->
+    </style>
+
+    <style name="style_search_tv">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">36dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">9.5dp</item>
+        <item name="android:background">@drawable/bg_mobark_appsearch</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingStart">15dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColorHint">@android:color/background_light</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="popupwindow_anim_style">
+        <item name="android:windowEnterAnimation">@anim/pop_fade_in</item>
+        <item name="android:windowExitAnimation">@anim/pop_fade_out</item>
+    </style>
+
+
+</resources>

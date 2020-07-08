@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="im_pop_icon">18dp</dimen>
+    <dimen name="im_pop_width">150dp</dimen>
+    <dimen name="im_pop_height">42dp</dimen>
+</resources>
