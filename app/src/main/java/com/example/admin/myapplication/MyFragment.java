@@ -135,9 +135,9 @@ public class MyFragment extends Fragment implements View.OnTouchListener {
                 return true;
             case MotionEvent.ACTION_UP:
                 Log.d(TAG, "ACTION_UP: "+layout.getScrollY());
-                if (scaling&&layout.getScrollY()<0) {
+                scaling = false;
+                if (layout.getScrollY()<0) {
                     Log.d(TAG, "onTouch: antion up");
-                    scaling = false;
                     replyImage();
                     replyLayout(layout.getScrollY());
                 }

@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AbsListView;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -94,6 +95,14 @@ public class ListWithHeaderFragment extends Fragment {
 
         listView.addHeaderView(head);
         disappear_distance = Utils.dp2px(44);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                int[] startLocation = new int[2];
+                view.getLocationOnScreen(startLocation);
+                Log.d(TAG, "onItemClick: " + startLocation[1]);
+            }
+        });
         listView.setOnScrollListener(new AbsListView.OnScrollListener() {
             @Override
             public void onScrollStateChanged(AbsListView view, int scrollState) {

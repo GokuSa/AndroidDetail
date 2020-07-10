@@ -34,7 +34,8 @@
             android:layout_height="50dp"
             android:layout_above="@id/contact_tv"
             android:layout_centerHorizontal="true"
-            android:scaleType="center"
+            android:layout_gravity="right"
+            android:layout_marginEnd="16dp"
             android:src="@drawable/ic_launcher_background" />
 
         <TextView

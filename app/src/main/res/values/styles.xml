@@ -44,5 +44,16 @@
         <item name="android:windowExitAnimation">@anim/pop_fade_out</item>
     </style>
 
+    <style name="SquareEntranceDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
 
+    <style name="dialogWindowAnim" parent="android:Animation" mce_bogus="1">
+        <item name="android:windowEnterAnimation">@anim/pop_fade_in</item>
+        <item name="android:windowExitAnimation">@anim/pop_fade_out</item>
+
+    </style>
 </resources>
