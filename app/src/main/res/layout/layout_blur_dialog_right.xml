@@ -84,8 +84,8 @@
             android:id="@+id/icon"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_gravity="start"
             android:visibility="visible"
+            android:layout_gravity="end"
             android:layout_marginTop="8dp"
             android:src="@mipmap/ic_launcher" />
 

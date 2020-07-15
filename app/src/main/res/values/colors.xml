@@ -7,5 +7,6 @@
     <color name="m_divider_line_color">#EAEAEA</color>
     <color name="smoke_while">#FFE5E5E5</color>
     <color name="smoke_black">#20000000</color>
+    <color name="half_transparent">#80000000</color>
 
 </resources>

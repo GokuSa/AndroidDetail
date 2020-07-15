@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.os.Build;
 import android.renderscript.Allocation;
@@ -117,11 +118,12 @@ public class Utils {
     public static Bitmap blur(Context context, Bitmap image) {
         // 计算图片缩小后的长宽
         float BITMAP_SCALE=0.4f;
-        float BLUR_RADIUS=15;
+        float BLUR_RADIUS=20;
         int width = Math.round(image.getWidth() * BITMAP_SCALE);
         int height = Math.round(image.getHeight() * BITMAP_SCALE);
 
         // 将缩小后的图片做为预渲染的图片。
+//        Bitmap.createBitmap()
         Bitmap inputBitmap = Bitmap.createScaledBitmap(image, width, height, false);
         // 创建一张渲染后的输出图片。
         Bitmap outputBitmap = Bitmap.createBitmap(inputBitmap);
@@ -147,5 +149,15 @@ public class Utils {
         tmpOut.copyTo(outputBitmap);
 
         return outputBitmap;
+    }
+
+    public static boolean isMIUI() {
+        String manufacturer = Build.MANUFACTURER;
+        //这个字符串可以自己定义,例如判断华为就填写huawei,魅族就填写meizu
+        if ("xiaomi".equalsIgnoreCase(manufacturer)) {
+            return true;
+        }
+        return false;
+
     }
 }

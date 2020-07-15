@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
 //        StatusBarCompat.setStatusBarColor(this, getResources().getColor(android.R.color.white)/*, true*/);
 
         getSupportFragmentManager().beginTransaction()
-                .add(R.id.center_frame, new ListWithHeaderFragment()).commitAllowingStateLoss();
+                .add(R.id.center_frame, new FristFragment()).commitAllowingStateLoss();
 
     }
 
